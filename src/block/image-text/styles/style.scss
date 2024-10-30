@@ -1,0 +1,174 @@
+/**
+ * #.# Styles for Gutenberg Blocks by Weaver.
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-wvrblocks-imgtext {
+
+	border: 			solid 1px transparent;
+	box-sizing: 		content-box;
+	display:			flex;
+	flex-direction:		row;
+	flex-wrap:			wrap;
+	margin-bottom: 		1.5em;
+	padding: 			0;
+	position: 			relative;
+	width:				100%;
+
+
+	.wvrblocks-imgtext__image {
+		margin:			0;
+		padding:		0;
+		width:			50%;
+	}
+
+	.wvrblocks-imgtext__image img {
+		vertical-align:	middle;
+	}
+
+	.wvrblocks-imgtext__descTop div {
+		font-size:		1.0em;
+		line-height:	1.25;
+	}
+	.wvrblocks-imgtext__descMid div {
+		font-size:		1.0em;
+		line-height:	1.25;
+	}
+	.wvrblocks-imgtext__desctBot div {
+		font-size:		1.0em;
+		line-height:	1.5;
+	}
+
+	.wvrblocks-imgtext__descriptions {
+		width:			50%;
+		padding:		0;
+
+		.wvrblocks-imgtext__descTop.has-text-shadow,
+		.wvrblocks-imgtext__descMid.has-text-shadow,
+		.wvrblocks-imgtext__descBot.has-text-shadow	{
+			text-shadow:	-1px 0px 6px #A8A8A8;
+		}
+	}
+
+	.wvrblocks-imgtext__shape-square img {
+		max-height:			250px;
+		max-width:			250px;
+		padding:			.5em;
+	}
+	.wvrblocks-imgtext__shape-square-smaller img {
+		max-height:			190px;
+		max-width:			190px;
+		padding:		.5em;
+	}
+	.wvrblocks-imgtext__shape-square-larger img {
+		max-height:			300px;
+		max-width:			300px;
+		padding:			.5em;
+	}
+	.wvrblocks-imgtext__shape-circle img {
+		border-radius: 	100%;
+		height:			250px;
+		width:			250px;
+		padding:		.5em;
+	}
+	.wvrblocks-imgtext__shape-circle-smaller img {
+		border-radius: 	100%;
+		height:			190px;
+		width:			190px;
+		padding:		.5em;
+	}
+	.wvrblocks-imgtext__shape-circle-larger img {
+		border-radius: 	100%;
+		height:			300px;
+		width:			300px;
+		padding:		.5em;
+	}
+	.wvrblocks-imgtext__shape-original img {
+		height: auto;
+		max-width:	100%;
+	}
+	.wvrblocks-imgtext__shape-original-smaller img {
+		height: auto;
+		max-width:	75%;
+	}
+	&.flex-dir-normal {
+		flex-direction: 	row;
+	}
+	&.flex-dir-reverse {
+		flex-direction: 	row-reverse;
+	}
+	&.flex-dir-col-normal {
+		flex-direction: 	column;
+	}
+	&.flex-dir-col-reverse {
+		flex-direction: 	column-reverse;
+	}
+	&.wvrblocks-imgtext__has-bg {
+		background-position:	center center;
+		background-size:		cover;
+	}
+	&.wvrblocks-imgtext__has-parallax {
+		background-attachment:	fixed;
+	}
+	&.alignleft {
+		margin-right:	1em;
+	}
+	&.alignright {
+		margin-right:	1em;
+	}
+
+
+	.wp-block-wvrblocks-imgtext .wvrblocks-imgtext__image {
+		width:	100% !important;
+	}
+
+
+}
+
+
+@media (max-width:700px) {		/* smaller tablets and phones - not iPad */
+.wp-block-wvrblocks-imgtext {
+
+	.wvrblocks-imgtext__shape-square img,
+	.wvrblocks-imgtext__shape-square-smaller img,
+	.wvrblocks-imgtext__shape-square-larger img,
+	.wvrblocks-imgtext__shape-circle img,
+	.wvrblocks-imgtext__shape-circle-smaller img,
+	.wvrblocks-imgtext__shape-circle-larger img {
+		max-height:			175px;
+		max-width:			175px;
+		padding:			.5em;
+	}
+
+	.wvrblocks-imgtext__shape-circle img {
+		border-radius: 	100%;
+		height:			250px;
+		width:			250px;
+		padding:		.5em;
+	}
+}
+
+}
+
+@media (max-width:580px) {		/* phones */
+	.wp-block-wvrblocks-imgtext.use-mobile-columns.flex-dir-normal {
+		flex-direction: 	column;
+
+	}
+	.wp-block-wvrblocks-imgtext.use-mobile-columns.flex-dir-reverse {
+		flex-direction: 	column-reverse;
+
+	}
+	.wp-block-wvrblocks-imgtext .wvrblocks-imgtext__image {
+		width:	100% !important;
+	}
+	.wp-block-wvrblocks-imgtext .wvrblocks-imgtext__descriptions {
+		width:	100% !important;
+	}
+}
+
+xx.wp-block-wvrblocks-imgtext.aligncenter {
+	margin-left: 	auto;
+	margin-right: 	auto;
+}

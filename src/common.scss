@@ -1,0 +1,17 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+
+
+
+.gutenberg,
+.block-editor {
+	font:	inherit;
+}
+
+*[class^='wp-block-wvrblocks-'] img {
+	background-color: transparent !important;
+}

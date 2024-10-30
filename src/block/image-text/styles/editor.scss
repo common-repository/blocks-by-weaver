@@ -1,0 +1,53 @@
+/*
+ * Image-Text Editor Styling
+ *
+ */
+
+.editor-block-list__block[data-type="wvrblocks/imgcols"] {
+.wp-block-wvrblocks-imgcols {
+		margin-bottom: 0;
+		z-index:	100;
+	}
+}
+
+/* This put a light bg on open panels */
+.components-panel__body.edit-post-block-sidebar__panel.is-opened .components-panel__body.is-opened {
+	background-color: rgba(0,0,0,.05);
+	border-bottom: 1px solid #888888;
+}
+
+.wp-block-wvrblocks-imgtext .components-button {
+	padding: 	0;
+	margin:		0;
+}
+
+.wvrblocks-imgtext_bgimage {
+	background: #EBFB95;
+}
+
+xx.mce-content-body .alignwide,
+xx.mce-content-body p.alighnwide {
+	margin-left: 		-10% !important;
+	margin-right: 		-10% !important;
+	max-width: 			120% !important;
+}
+xx.editor-block-list__block .wp-block-cover-image.alignfull {		/* This makes a full area image */
+		left: 			0;
+		margin-left: 	auto;
+		margin-right:	auto;
+		width: 			100%;
+	}
+
+*[class^='wp-block-wvrblocks-'].alignfull {
+	margin-left: 	calc(50% - 50vw);
+	margin-right: 	calc(50% - 50vw);
+	max-width: 		1000%;
+	width: 			100vw;
+}
+
+*[class^='wp-block-wvrblocks-'].alignwide {
+	margin-left: 	calc(50% - 35vw) !important;
+	margin-right: 	calc(50% - 35vw) !important;
+	width: 			70vw !important;
+	max-width: 		1000% !important;
+}

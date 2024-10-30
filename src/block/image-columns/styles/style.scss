@@ -1,0 +1,508 @@
+/**
+ * #.# Styles for Gutenberg Blocks by Weaver.
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-wvrblocks-imgcols {
+
+	border: 			solid 2px transparent;
+	box-sizing: 		border-box !important;
+	display:			flex;
+	flex-wrap: 			wrap;
+	margin-bottom: 		.5em;
+	padding: 			.5em;
+	position: 			relative;
+	width:				100%;
+
+	h4 {
+		font-size:		1.5em;
+		line-height:	1;
+	}
+
+	.wvrblocks-imgcols__text p {
+		font-size:		1.0em;
+		line-height:	1.25;
+	}
+
+	.wvrblocks-imgcols__image,
+	.wvrblocks-imgcols__image figure {
+		margin:			0 auto 0 auto;
+		padding:		0 .33em 0 .33em;
+	}
+	.wvrblocks-imgcols__text {
+		padding-left:	1em;
+		padding-right:	1em;
+	}
+	&.align_left {
+		display:		inline-flex;
+		float:			left;
+		flex-wrap: 		wrap;
+		margin-right: 	1em;
+	}
+	&.align_right {
+		display:		inline-flex;
+		flex-wrap: 		wrap;
+		float:			right;
+		margin-left: 	1em;
+	}
+	&.align_center {
+		display:		flex;
+		flex-wrap: 		nowrap;
+		margin-left:	auto;
+		margin-right:	auto;
+	}
+	&.align_none {
+		display:		flex;
+		margin-left:	1em;
+		margin-right:	1em;
+	}
+
+}
+
+.wvrblocks-imgcols__button {				/* will at least allow Pro version to display properly */
+	background-color:	rgba(0,0,0,.15);
+	border:				none;
+	border-radius:		0px;
+	cursor: 			pointer;
+	display:			inline-flex;
+	margin:				.25em auto .25em auto;
+	padding:			.3em .75em .3em .75em;
+	width:				auto !important;
+	text-decoration: 	none !important;
+}
+
+.wvrblocks-imgcols__button a {
+	text-decoration: 	none !important;
+	border:				none !important;
+}
+
+.wvrblocks-imgcols__content-button-small {
+	font-size: 75% !important;
+}
+.wvrblocks-imgcols__content-button-normal {
+	font-size: 100% !important;
+}
+.wvrblocks-imgcols__content-button-medium {
+	font-size: 125% !important;
+}
+.wvrblocks-imgcols__content-button-large {
+	font-size: 150% !important;
+}
+
+.wvrblocks-imgcols__content-button-xlarge {
+	font-size: 200% !important;
+}
+
+
+.wvrblocks-imgcols__content-button:hover {
+	opacity:			0.6;
+}
+
+.wvrblocks-imgcols__column {
+	padding:			.5em 0 .5em 0;
+}
+
+/* ---------------------------------------- */
+
+/* styling for each number of columns */
+
+.wvrblocks-imgcols__has-1,							/* ----- ONE COLUMN ----- */
+.wvrblocks-imgcols__has-undefined {
+
+	.wvrblocks-imgcols__column-two,
+	.wvrblocks-imgcols__column-three,
+	.wvrblocks-imgcols__column-four {
+		display: none;
+	}
+	.wvrblocks-imgcols__column-one {
+		width:			100%;
+	}
+
+	&.wvrblocks-imgcols__shape-square img {
+		height:			250px;
+		width:			250px;
+	}
+	&.wvrblocks-imgcols__shape-square-smaller img {
+		height:			190px;
+		width:			190px;
+	}
+	&.wvrblocks-imgcols__shape-square-larger img {
+		height:			300px;
+		width:			300px;
+	}
+	&.wvrblocks-imgcols__shape-circle img {
+		border-radius: 	100%;
+		height:			250px;
+		width:			250px;
+	}
+	&.wvrblocks-imgcols__shape-circle-smaller img {
+		border-radius: 	100%;
+		height:			190px;
+		width:			190px;
+	}
+	&.wvrblocks-imgcols__shape-circle-larger img {
+		border-radius: 	100%;
+		height:			300px;
+		width:			300px;
+	}
+	&.wvrblocks-imgcols__shape-original img {
+		height: 		auto;
+		max-width:		100%;
+	}
+	&.wvrblocks-imgcols__shape-original-smaller img {
+		height: 		auto;
+		max-width:		75%;
+		margin-left:	auto;
+		margin-right:	auto;
+	}
+}
+
+
+.wvrblocks-imgcols__has-2 {							/* ----- TWO COLUMNS ----- */
+	.wvrblocks-imgcols__column-three,
+	.wvrblocks-imgcols__column-four {
+		display: 		none;
+	}
+
+	.wvrblocks-imgcols__column-one {
+		width:			49.4%;
+		margin-right:	0.6%;
+	}
+
+
+	.wvrblocks-imgcols__column-two {
+		width:			49.4%;
+		margin-left:	0.6%;
+	}
+
+
+	&.wvrblocks-imgcols__shape-square img {
+		height:			220px;
+		width:			220px;
+	}
+	&.wvrblocks-imgcols__shape-square-smaller img {
+		height:			165px;
+		width:			165px;
+	}
+	&.wvrblocks-imgcols__shape-square-larger img {
+		height:			280px;
+		width:			280px;
+	}
+	&.wvrblocks-imgcols__shape-circle img {
+		border-radius: 	100%;
+		height:			220px;
+		width:			220px;
+	}
+	&.wvrblocks-imgcols__shape-circle-smaller img {
+		border-radius: 	100%;
+		height:			165px;
+		width:			165px;
+	}
+	&.wvrblocks-imgcols__shape-circle-larger img {
+		border-radius: 	100%;
+		height:			280px;
+		width:			280px;
+	}
+	&.wvrblocks-imgcols__shape-original img {
+		height: 		auto;
+		max-width:		100%;
+	}
+	&.wvrblocks-imgcols__shape-original-smaller img {
+		height: auto;
+		margin-left:	auto;
+		margin-right:	auto;
+		max-width:		75%;
+	}
+}
+
+
+.wvrblocks-imgcols__has-3 {							/* ----- THREE COLUMNS ----- */
+
+	.wvrblocks-imgcols__column-four {
+		display: 		none;
+	}
+
+	.wvrblocks-imgcols__column-one {
+		width:			32.666%;
+		margin-right:	0.5%;
+	}
+
+	.wvrblocks-imgcols__column-two {
+		width:			32.666%;
+		margin-left:	0.5%;
+		margin-right:	0.5%;
+	}
+
+	.wvrblocks-imgcols__column-three {
+		width:			32.666%;
+		margin-left:	0.5%;
+	}
+
+	&.wvrblocks-imgcols__shape-square img {
+		height:			190px;
+		width:			190px;
+	}
+	&.wvrblocks-imgcols__shape-square-smaller img {
+		height:			145px;
+		width:			145px;
+	}
+	&.wvrblocks-imgcols__shape-square-larger img {
+		height:			220px;
+		width:			220px;
+	}
+	&.wvrblocks-imgcols__shape-circle img {
+		border-radius: 	100%;
+		height:			190px;
+		width:			190px;
+	}
+	&.wvrblocks-imgcols__shape-circle-smaller img {
+		border-radius: 	100%;
+		height:			145px;
+		width:			145px;
+	}
+	&.wvrblocks-imgcols__shape-circle-larger img {
+		border-radius: 	100%;
+		height:			220px;
+		width:			220px;
+	}
+	&.wvrblocks-imgcols__shape-original img {
+		height: 		auto;
+		max-width:		100%;
+	}
+	&.wvrblocks-imgcols__shape-original-smaller img {
+		height: 		auto;
+		margin-left:	auto;
+		margin-right:	auto;
+		max-width:		75%;
+	}
+}
+
+.wvrblocks-imgcols__has-4 {							/* ----- FOUR COLUMNS ----- */
+
+	.wvrblocks-imgcols__column-one {
+		width:			24.25%;
+		margin-right:	0.5%;
+	}
+
+	.wvrblocks-imgcols__column-two {
+		width:			24.25%;
+		margin-left:	0.5%;
+		margin-right:	0.5%;
+	}
+
+	.wvrblocks-imgcols__column-three {
+		width:			24.25%;
+		margin-left:	0.5%;
+		margin-right:	0.5%;
+	}
+
+	.wvrblocks-imgcols__column-four {
+		width:			24.25%;
+		margin-left:	0.5%;
+	}
+
+
+	&.wvrblocks-imgcols__shape-square img {
+		height:			140px;
+		width:			140px;
+	}
+	&.wvrblocks-imgcols__shape-square-smaller img {
+		height:			105px;
+		width:			105px;
+	}
+	&.wvrblocks-imgcols__shape-square-larger img {
+		height:			160px;
+		width:			160px;
+	}
+	&.wvrblocks-imgcols__shape-circle img {
+		border-radius: 	100%;
+		height:			140px;
+		width:			140px;
+	}
+	&.wvrblocks-imgcols__shape-circle-smaller img {
+		border-radius: 	100%;
+		height:			105px;
+		width:			105px;
+	}
+	&.wvrblocks-imgcols__shape-circle-larger img {
+		border-radius: 	100%;
+		height:			160px;
+		width:			160px;
+	}
+	&.wvrblocks-imgcols__shape-original img {
+		height: 		auto;
+		max-width:		100%;
+	}
+	&.wvrblocks-imgcols__shape-original-smaller img {
+		height: 		auto;
+		margin-left:	auto;
+		margin-right:	auto;
+		max-width:		75%;
+	}
+}
+
+@media screen and (max-width:767px) {  /* rules for small tablets and phones */
+/* ---------------------------------------- */
+
+/* styling for each number of columns */
+
+.wvrblocks-imgcols__has-1,							/* ----- ONE COLUMN ----- */
+.wvrblocks-imgcols__has-undefined {
+
+	.wvrblocks-imgcols__column-two,
+	.wvrblocks-imgcols__column-three,
+	.wvrblocks-imgcols__column-four {
+		display: 		none;
+	}
+	.wvrblocks-imgcols__column-one {
+		width:			100%;
+	}
+
+	&.wvrblocks-imgcols__shape-square img {
+		height:			250px;
+		width:			250px;
+	}
+	&.wvrblocks-imgcols__shape-square-smaller img {
+		height:			190px;
+		width:			190px;
+	}
+	&.wvrblocks-imgcols__shape-square-larger img {
+		height:			300px;
+		width:			300px;
+	}
+	&.wvrblocks-imgcols__shape-circle img {
+		border-radius: 	100%;
+		height:			250px;
+		width:			250px;
+	}
+	&.wvrblocks-imgcols__shape-circle-smaller img {
+		border-radius: 	100%;
+		height:			190px;
+		width:			190px;
+	}
+	&.wvrblocks-imgcols__shape-circle-larger img {
+		border-radius: 	100%;
+		height:			300px;
+		width:			300px;
+	}
+	&.wvrblocks-imgcols__shape-original img {
+		height: 		auto;
+		max-width:		100%;
+	}
+	&.wvrblocks-imgcols__shape-original-smaller img {
+		height: 		auto;
+		margin-left:	auto;
+		margin-right:	auto;
+		max-width:		75%;
+	}
+}
+
+
+.wvrblocks-imgcols__has-2 {
+	.wvrblocks-imgcols__column-three,
+	.wvrblocks-imgcols__column-four {
+		display: 		none;
+	}
+
+	.wvrblocks-imgcols__column-one {
+		width:			49.4%;
+		margin-right:	0.6%;
+	}
+
+
+	.wvrblocks-imgcols__column-two {
+		width:			49.4%;
+		margin-left:	0.6%;
+	}
+}
+
+.wvrblocks-imgcols__has-2,
+.wvrblocks-imgcols__has-3,
+.wvrblocks-imgcols__has-4 {							/* ----- 2 to 4 on mobile have same sizes  ----- */
+
+	&.wvrblocks-imgcols__shape-square img {
+		height:			190px;
+		width:			190px;
+	}
+	&.wvrblocks-imgcols__shape-square-smaller img {
+		height:			145px;
+		width:			145px;
+	}
+	&.wvrblocks-imgcols__shape-square-larger img {
+		height:			220px;
+		width:			220px;
+	}
+	&.wvrblocks-imgcols__shape-circle img {
+		border-radius: 	100%;
+		height:			190px;
+		width:			190px;
+	}
+	&.wvrblocks-imgcols__shape-circle-smaller img {
+		border-radius: 	100%;
+		height:			145px;
+		width:			145px;
+	}
+	&.wvrblocks-imgcols__shape-circle-larger img {
+		border-radius: 	100%;
+		height:			220px;
+		width:			220px;
+	}
+	&.wvrblocks-imgcols__shape-original img {
+		height: 		auto;
+		max-width:		100%;
+	}
+	&.wvrblocks-imgcols__shape-original-smaller img {
+		height: 		auto;
+		margin-left:	auto;
+		margin-right:	auto;
+		max-width:		75%;
+	}
+}
+
+
+.wvrblocks-imgcols__has-3 {							/* ----- THREE COLUMNS ----- */
+
+	.wvrblocks-imgcols__column-four {
+		display: 		none;
+	}
+
+	.wvrblocks-imgcols__column-one {
+		width:			49.4%;
+		margin-left:	0;
+		margin-right:	0.6%;
+	}
+
+
+	.wvrblocks-imgcols__column-two {
+		width:			49.4%;
+		margin-left:	.6%;
+		margin-right:	0;
+	}
+
+	.wvrblocks-imgcols__column-three {
+		width:			49.5%;
+		margin-left:	auto;
+		margin-right:	auto;
+	}
+}
+
+.wvrblocks-imgcols__has-4 {							/* ----- FOUR COLUMNS ----- */
+
+	.wvrblocks-imgcols__column-one,
+	.wvrblocks-imgcols__column-three {
+		width:			49.4%;
+		margin-right:	0.6%;
+		margin-left:	0;
+	}
+
+
+	.wvrblocks-imgcols__column-two,
+	.wvrblocks-imgcols__column-four {
+		width:			49.4%;
+		margin-left:	0.6%;
+		margin-right:	0;
+	}
+
+}
+} /* end mobile @media */
